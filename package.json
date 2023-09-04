@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Tobi-Roppo/frontend#readme",
   "dependencies": {
-    "electron": "^26.1.0"
+    "axios": "^1.5.0",
+    "electron": "^26.1.0",
+    "toastify-js": "^1.12.0"
   }
 }

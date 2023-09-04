@@ -1,0 +1,23 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "a frontend for my project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobi-Roppo/frontend.git"
+  },
+  "author": "Clifford Halasan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tobi-Roppo/frontend/issues"
+  },
+  "homepage": "https://github.com/Tobi-Roppo/frontend#readme",
+  "devDependencies": {
+    "electron": "^26.1.0"
+  }
+}

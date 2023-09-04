@@ -15,39 +15,19 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header>
-      <h1>JS For Beginners</h1>
-    </header>
-
-    <section class="container">
-      <form id="my-form">
-        <h1>Add User</h1>
-        <div class="msg"></div>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name">
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="text" id="email">
-        </div>
-        <input class="btn" type="submit" value="Submit">
+    <h1>Grammar Correction</h1>
+    <div>
+      <form id="form_sentence">
+        <label for="sentence">Sentence:</label><br>
+        <textarea name="sentence" rows="10"></textarea><br>
+        <input type="submit" value="Submit"><br>
       </form>
-
-      <ul id="users"></ul>
-
-      <!-- <ul class="items">
-        <li class="item">Item 1</li>
-        <li class="item">Item 2</li>
-        <li class="item">Item 3</li>
-      </ul> -->
-    </section>
-
-    <p id="info"></p>
-    
-
-    <script src="js/script.js"></script>
-    <script src="../preload.js"></script>
+      <br>
+      <div>
+        <label for="sentence_corrected">Corrected Sentence:</label><br>
+        <textarea id="sentence_corrected" rows="10" readonly></textarea>
+      </div>
+    </div>
     <script src="js/renderer.js"></script>
   </body>
 </html>

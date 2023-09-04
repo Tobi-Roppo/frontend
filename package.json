@@ -17,7 +17,7 @@
     "url": "https://github.com/Tobi-Roppo/frontend/issues"
   },
   "homepage": "https://github.com/Tobi-Roppo/frontend#readme",
-  "devDependencies": {
+  "dependencies": {
     "electron": "^26.1.0"
   }
 }

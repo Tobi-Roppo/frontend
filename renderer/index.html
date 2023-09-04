@@ -11,11 +11,43 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>Hello from Electron renderer!</title>
+    <title>Grammar Fixer</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <p>Hello Again</p>
-    <h1>Hello from Electron renderer!</h1>
-    <p>👋</p>
+    <header>
+      <h1>JS For Beginners</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add User</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+        <input class="btn" type="submit" value="Submit">
+      </form>
+
+      <ul id="users"></ul>
+
+      <!-- <ul class="items">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+      </ul> -->
+    </section>
+
+    <p id="info"></p>
+    
+
+    <script src="js/script.js"></script>
+    <script src="../preload.js"></script>
+    <script src="js/renderer.js"></script>
   </body>
 </html>

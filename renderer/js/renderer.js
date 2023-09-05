@@ -6,6 +6,10 @@ if (form) {
 
     const formData = new FormData(form);
 
-    console.log(await window.axios.openAI());
+    const text = await window.axios.openAI();
+
+    document.getElementById('sentence_corrected').innerHTML = text;
+    
   };
 }
+ 

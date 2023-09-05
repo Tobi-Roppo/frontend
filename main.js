@@ -1,6 +1,10 @@
+
+//imported modules
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
+const axios = require('axios');
 
+//main window
 const isDev = true;
 const createWindow = () => {
   const win = new BrowserWindow({
@@ -19,9 +23,9 @@ const createWindow = () => {
 };
 
 app.whenReady().then(() => {
-  ipcMain.handle('axios.openAI', async function(){
-        return "Hello World";
-      })
+
+  //initialize function
+  ipcMain.handle('axios.openAI', openAI)
   createWindow();
 
   app.on("activate", () => {
@@ -36,3 +40,19 @@ app.on("window-all-closed", () => {
     app.quit();
   }
 });
+
+//main function
+async function openAI (){
+
+  axios({
+    method: 'post',
+    url: '/user/12345',
+    data: {
+      firstName: 'Fred',
+      lastName: 'Flintstone'
+    },
+    headers: {'X-Custom-Header': 'foobar'}
+  });
+
+  return "Hello World";
+}
